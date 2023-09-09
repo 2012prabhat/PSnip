@@ -1,4 +1,4 @@
-import React from "react";
+// import React from "react";
 import todoBack from "../images/todoBack.png";
 import { signInWithEmailAndPassword} from 'firebase/auth';
 import { auth} from "./Firebase"
@@ -34,7 +34,7 @@ function Login() {
       </div>
       <form className="loginRight" onSubmit={(e)=>handleLogin(e)}>
         <div className="appName">
-        PrabhatSnipp
+        PSnipp
         </div>
         <div class="input-field">
           <i class="fas fa-user" aria-hidden="true"></i>
