@@ -147,10 +147,10 @@ export default function Dashboard() {
         id: doc.id,
         ...doc.data(),
       }));
-      console.log(fetchData, "my fetched");
+      // console.log(fetchData, "my fetched");
       setCodeList(fetchedData);
-      setFilteredCodeList(fetchedData);
-      setSelectedCode(fetchedData[0]);
+      // setFilteredCodeList(fetchedData);
+      // setSelectedCode(fetchedData[0]);
     } catch (error) {
       console.error("Error fetching data:", error);
     }
