@@ -1,7 +1,7 @@
 // import React from "react";
 import todoBack from "../images/todoBack.png";
 import { signInWithEmailAndPassword} from 'firebase/auth';
-import { auth} from "./Firebase"
+import { auth } from "./Firebase"
 import { useNavigate } from 'react-router-dom';
 import { showErrorCard } from "../App";
 
@@ -45,7 +45,8 @@ function Login() {
           <input type="password" placeholder="Password" name="password" required/>
         </div>
         <button className="loginBtn">Login</button>
-        {/* <div className="signupTag">Don't have an account? <a href="/signup">Signup</a></div> */}
+        <div className="signupTag">Don't have an account? <a href="/signup">Signup</a></div>
+        <div className="signupTag">Forgot Password ? <a href="/resetPass">Reset your password</a></div>
       </form>
     </div>
   );
