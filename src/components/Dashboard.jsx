@@ -150,6 +150,7 @@ export default function Dashboard() {
       // console.log(fetchData, "my fetched");
       setCodeList(fetchedData);
       setFilteredCodeList(fetchedData);
+      document.querySelector('.searchCont input').value = "";
       // setSelectedCode(fetchedData[0]);
     } catch (error) {
       console.error("Error fetching data:", error);
